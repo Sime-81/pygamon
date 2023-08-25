@@ -21,11 +21,11 @@ class Game:
 
         if pressed[pygame.K_UP] or pressed[pygame.K_z]:
             self.player.move_up()
-        if pressed[pygame.K_DOWN] or pressed[pygame.K_s]:
+        elif pressed[pygame.K_DOWN] or pressed[pygame.K_s]:
             self.player.move_down()
-        if pressed[pygame.K_LEFT] or pressed[pygame.K_q]:
+        elif pressed[pygame.K_LEFT] or pressed[pygame.K_q]:
             self.player.move_left()
-        if pressed[pygame.K_RIGHT] or pressed[pygame.K_d]:
+        elif pressed[pygame.K_RIGHT] or pressed[pygame.K_d]:
             self.player.move_right()
 
     def update(self):
